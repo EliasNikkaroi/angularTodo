@@ -2,7 +2,7 @@
   <article>
     <p>{{ task.title }}</p>
     <p>
-      <time>{{ task.dueDate }}</time>
+      <time>{{ task.dueDate | date: 'fullDate' }}</time>
     </p>
 
     <p>{{ task.summary }}</p>
